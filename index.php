@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/faris-logo-rounded.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>MSIB 5 - Latihan Git</title>
 </head>
@@ -12,11 +16,12 @@
   <header> <!-- Header -->
     <div class="container">
       <nav> <!-- Navbar -->
-        <img src="img/faris-logo.png" alt="Faris Logo" class="logo">
+        <img src="./img/faris-logo.png" alt="Faris Logo" class="logo">
         <ul>
           <li><a href="home.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="search"><i class="fa fa-search"></i></a></li>
         </ul>
       </nav>
       <div class="header-text">
@@ -26,19 +31,17 @@
     </div>
   </header>
   <main> <!-- Main -->
-    <div id="about">
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="about-col-1">
             <img src="img/faris-logo.png" alt="Faris Logo" height="auto" width="37.5rem">
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>Esse eu est anim pariatur cillum reprehenderit amet laboris laboris duis tempor mollit.
-              Reprehenderit non eiusmod deserunt incididunt exercitation. Magna adipisicing officia
-              exercitation sunt mollit ullamco. Magna adipisicing enim nisi anim aliqua nisi anim ut
-              proident qui. Tempor eiusmod pariatur adipisicing irure.</p>
-
+            <h2 class="sub-title">About Me</h2>
+            <p>I'm currently majoring in Computer Science, particularly in the Informatics Engineering study program.
+              I'm interested in pursuing a career in the IT sector. As of now, I'm looking forward to becoming a
+              software engineer.</p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
               <p class="tab-links" onclick="openTab('experience')">Experience</p>
@@ -74,30 +77,42 @@
           </div>
         </div>
       </div>
-    </div>
-    <h2>Number Game</h2>
-    <p>Number Game is a game where players solve a 4-digit secret number combination using clever deductions!</p>
+    </section>
 
-    <h2>Bomber Plane Simulator</h2>
-    <p>A game that simulates the trajectory of a bomb dropped by a plane!</p>
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">Portfolio</h2>
+        <div class="card">
+          <img src="./img/number-game.png" alt="Number Game">
+          <a href="https://github.com/farisfaikar/number-game" target="_blank" class="link-button">Number Game →</a>
+          <p>Number Game is a game where players solve a 4-digit secret number combination using clever deductions!</p>
+        </div>
+        <div class="card">
+          <img src="./img/bomber-plane-simulator.png" alt="Bomber Plane Simulator">
+          <a href="https://github.com/farisfaikar/bomber-plane-simulator" target="_blank" class="link-button">Bomber
+            Plane Simulator →</a>
+          <p>A game that simulates the trajectory of a bomb dropped by a plane!</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-
   <footer> <!-- Footer -->
-    <p>Copyright &copy; Faris Faikar. 2023</p>
-    <ul>
-      <li><a href="https://github.com/farisfaikar" target="_blank">GitHub</a></li>
-      <li><a href="https://instagram.com/farisfaikar_r" target="_blank">Instagram</a></li>
-      <li><a href="https://linkedin.com/in/farisfaikar" target="_blank">Linkedin</a></li>
-      <li><a href="https://twitter.com/farisfaikar_r" target="_blank">Twitter</a></li>
-      <li><a href="https://youtube.com/@farisfaikar_r" target="_blank">Youtube</a></li>
-      <li><a href="https://facebook.com/farisfaikar.r" target="_blank">Facebook</a></li>
-    </ul>
+    <div class="container">
+      <ul class="socials">
+        <li><a href="https://github.com/farisfaikar" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://instagram.com/farisfaikar_r" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li><a href="https://linkedin.com/in/farisfaikar" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/farisfaikar_r" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="https://youtube.com/@farisfaikar_r" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="https://facebook.com/farisfaikar.r" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+      </ul>
+      <p>Copyright <i class="fa fa-copyright"></i> Faris Faikar. 2023</p>
+    </div>
   </footer>
 </body>
 
-</html>
+<script src="script.js"></script>
 
-<?php
-  echo "Hello World";
-?>
+</html>
